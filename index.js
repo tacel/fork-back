@@ -18,7 +18,7 @@ app.use((req, res, next) => {
 const port = 3000;
 const MODEL_NAME = "gemini-1.0-pro-001";
 const API_KEY = ""; // 제미나이 API 키로 대체
-const prompt = '﻿이 주제와 관련된 참신한 창업 아이디어 작성해줘. 온라인에서 할 수 있는 사업 아이템으로'; // 당신의 챗봇에 맞게 프롬프트 변경해주세요
+const prompt = '﻿전화기 사용법 , 다음의 이미지 url 링크의 내용을 추출해서 참조하고  추출내용에 대해서만 설명해줘 https://kfood751c2c84c6274b5b99e0d8ff758b769165727-staging.s3.amazonaws.com/park_n_forward.jpg'; // 당신의 챗봇에 맞게 프롬프트 변경해주세요
 
 app.post('/generate', async (req, res) => {  
     try {
